@@ -1,0 +1,83 @@
+{% load bootstrap5 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventScheduler</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 3rem;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2575fc;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .btn-custom-primary {
+            background-color: #2575fc;
+            color: white;
+        }
+        .btn-custom-primary:hover {
+            background-color: #1a5dc8;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="bi bi-calendar-event me-2"></i>EventScheduler</h5>
+                    <p class="text-muted">Simplifying event management</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-decoration-none">Features</a></li>
+                        <li><a href="#" class="text-decoration-none">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-decoration-none">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-envelope me-2"></i>contact@eventscheduler.com</li>
+                        <li><i class="bi bi-twitter me-2"></i>@EventScheduler</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-muted">
+                <small>© 2025 EventScheduler. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

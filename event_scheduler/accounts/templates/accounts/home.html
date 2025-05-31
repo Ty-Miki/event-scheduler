@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-calendar-event me-2"></i>EventScheduler
+            </a>
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-primary me-2">Sign In</a>
+                <a href="#" class="btn btn-custom-primary">Register</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Simplify Your Scheduling</h1>
+            <p class="lead mb-5">Organize, manage, and share events with ease</p>
+            <a href="#" class="btn btn-light btn-lg px-4 me-2">Get Started</a>
+            <a href="#features" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container mb-5" id="features">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <h3 class="h4">Easy Scheduling</h3>
+                        <p class="text-muted">Quickly create and manage events with our intuitive interface.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="h4">Collaborate</h3>
+                        <p class="text-muted">Invite participants and manage attendee lists effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body text-center p-4">
+                        <div class="feature-icon">
+                            <i class="bi bi-bell"></i>
+                        </div>
+                        <h3 class="h4">Reminders</h3>
+                        <p class="text-muted">Never miss an event with automated notifications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mb-4">Ready to organize your events?</h2>
+                <p class="lead mb-4">Join thousands of users who trust EventScheduler for their scheduling needs.</p>
+                <a href="#" class="btn btn-custom-primary btn-lg px-4">Create Free Account</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

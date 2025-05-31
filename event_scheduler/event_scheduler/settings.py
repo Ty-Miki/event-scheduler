@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'events',
     'api',
     'shared',
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
